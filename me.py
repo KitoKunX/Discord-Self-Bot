@@ -30,7 +30,7 @@ async def on_message(message):
             command, args = msg[0], msg[1] 
         else:
             command, args = msg[0], ""
-        command = command[2:]
+        command = command[len(prefix):]
 
         #commands here
         if command == "embed":
